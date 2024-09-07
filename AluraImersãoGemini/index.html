@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define o conjunto de caracteres usado no documento -->
+    <meta charset="UTF-8">
+    <!-- Define o viewport para garantir que o site seja exibido corretamente em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página que aparece na aba do navegador -->
+    <title>Museu Online</title>
+    <!-- Define o ícone da aba do navegador em formato PNG -->
+    <link rel="icon" type="image/png" href="/img/art.png">
+    <!-- Define o ícone da aba do navegador como um atalho em formato ICO -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Conecta-se aos servidores do Google Fonts para carregar as fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Carrega as fontes do Google Fonts usadas no site -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho do site -->
+    <header>
+        <h1>Museu de Artes Online</h1>
+    </header>
+
+    <!-- Corpo principal do site -->
+    <main>
+        <section>
+            <!-- Campo de pesquisa para buscar obras ou artistas -->
+            <input id="campo-pesquisa" type="text" placeholder="Busque por obras ou artistas...">
+            <!-- Botão que aciona a função pesquisar quando clicado -->
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+        <section class="obras" id="obras-secao">
+            <div class="obra_conteudo">
+                <h2>Noite Estrelada</h2>
+                <img src="/img/noite_estrelada.jpg" alt="">
+                <p>"A Noite Estrelada" (1889), de Vincent van Gogh, é uma pintura pós-impressionista que mostra um céu noturno vibrante com espirais de estrelas e a lua sobre uma vila tranquila.</p>
+            </div>
+            
+        </section>
+
+        <!-- Seção para exibir os resultados da pesquisa -->
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+            <!-- Resultados da pesquisa serão inseridos aqui pelo JavaScript -->
+        </section>
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <!-- Texto do rodapé com informações de direitos autorais -->
+        <p>2024 - Obras de Arte. Todos os direitos reservados</p>
+        <!-- Informação de contato -->
+        <p>Entre em contato pelo email: museuonline@email.com</p>
+    </footer>
+    
+    <!-- Scripts JavaScript para carregar os dados e o comportamento da página -->
+    <script src="dados.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
